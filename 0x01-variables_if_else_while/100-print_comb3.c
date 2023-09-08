@@ -13,8 +13,8 @@ int main(void)
 	{
 		for (tens = unit + 1; tens <= 9; tens++)
 	{
-		putchar((tens % 10) + '0');
 		putchar((unit % 10) + '0');
+		putchar((tens % 10) + '0');
 		if (unit == 8 && tens == 9)
 			continue;
 
