@@ -10,11 +10,11 @@ int main(void)
 	int tens = 0;
 	int hund = 0;
 
-	for (unit = 0; unit <= 8; unit++)
+	for (unit = 0; unit <= 7; unit++)
 	{
-		for (tens = unit + 1; tens <= 9; tens++)
+		for (tens = unit + 1; tens <= 8; tens++)
 		{
-			for (hund = tens + 1; hund <= 10; hund++)
+			for (hund = tens + 1; hund <= 9; hund++)
 			{
 			putchar((unit % 10) + '0');
 			putchar((tens % 10) + '0');
