@@ -10,7 +10,7 @@ int main(void)
 
 	while (n <= 122)
 	{
-		if (n != 'q' || n != 'e')
+		if (n != '113' || n != '101')
 		{
 			putchar(n);
 		}
