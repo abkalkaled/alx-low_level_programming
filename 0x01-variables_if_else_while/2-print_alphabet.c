@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char n = 97; /*97 is a in ASCII*/
+	char n = 97; /*97 is 'a' in ASCII*/
 
-	while (n <= 122, n++)
+	while (n <= 122)
 	{
-		putchar('n');
+		putchar(n);
+		n++;
 	}
-
-		return (0);
+	return (0);
 }
