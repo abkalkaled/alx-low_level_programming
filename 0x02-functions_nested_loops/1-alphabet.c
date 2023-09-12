@@ -4,13 +4,11 @@
  *
  * Return: Always 0
  */
-int main(void)
+void print_alphabet(void)
 {
-	char a;
+	char alphabet;
 
-	for (a = 97; a <= 122; a++);
-	_putchar('a');
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++);
+	_putchar('alphabet');
 	_putchar('\n');
-	return (0);
-
 }
