@@ -9,13 +9,15 @@ void jack_bauer(void)
 	int hr;
 	int min;
 
-	for (hr = 00; hr <= 23; hr++)
+	for (hr = 0; hr <= 23; hr++)
 	{
-		for (min = 00; min <= 59; min++)
+		for (min = 0; min <= 59; min++)
 		{
-		_putchar(min);
+		_putchar('0' + (min % 10)); /*prints the units for min*/
+		_putchar('0' + (min / 10)); /*tens for min*/
 		}
-		_putchar(hr);
-
+		_putchar('0' + (hr % 10));
+		_putchar('0' + (hr / 10));
+		_putchar('\n');
 	}
 }
