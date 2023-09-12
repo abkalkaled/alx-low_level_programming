@@ -1,13 +1,19 @@
 #include "main.h"
-#include <unistd.h>
 /**
- * _putchar - writes the caharacter c to stdout
- * @c: The character to print
+ * main - entry point
  *
- * Return - returns a value
- * On error, -1 is returned amd errno is set
+ * Return: returns a value of 0
  */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	_putchar('_');
+	_putchar('P');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
