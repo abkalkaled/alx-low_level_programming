@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	char alphabet;
+	char a;
 
-	for(alphabet = 97; alphabet <= 122; alphabet++);
-	_putchar('alphabet');
+	for (a = 97; a <= 122; a++);
+	_putchar('a');
 	_putchar('\n');
 	return (0);
 
