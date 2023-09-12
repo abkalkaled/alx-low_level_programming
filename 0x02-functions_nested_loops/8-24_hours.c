@@ -13,11 +13,12 @@ void jack_bauer(void)
 	{
 		for (min = 0; min <= 59; min++)
 		{
-		_putchar('0' + (min % 10)); /*prints the units for min*/
-		_putchar('0' + (min / 10)); /*tens for min*/
-		}
-		_putchar('0' + (hr % 10));
-		_putchar('0' + (hr / 10));
+		_putchar('0' + (hr / 10)); /*prints the tens for hour*/
+		_putchar('0' + (hr % 10)); /*unitss for hours*/
+		_putchar(':');
+		_putchar('0' + (min / 10));
+		_putchar('0' + (min % 10));
 		_putchar('\n');
+		}
 	}
 }
