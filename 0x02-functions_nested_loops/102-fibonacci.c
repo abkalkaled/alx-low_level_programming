@@ -14,12 +14,12 @@ int main(void)
 		if (n == 0)
 			printf("%ld", i);
 		else if (n == 1)
-			printf(", % ld", j);
+			printf(", %ld", j);
 		else
 		{
 			j += i;
 			i = j - i;
-			printf(", % ld", j);
+			printf(", %ld", j);
 		}
 		++n;
 	}
