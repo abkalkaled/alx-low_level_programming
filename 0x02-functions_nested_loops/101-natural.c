@@ -16,6 +16,6 @@ int main(void)
 		}
 		n++;
 	}
-	printf("sum of mult 3 and 5 below 1024 is: %d\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
