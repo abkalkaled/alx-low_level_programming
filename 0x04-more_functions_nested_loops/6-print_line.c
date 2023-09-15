@@ -6,16 +6,19 @@
  */
 void print_line(int n)
 {
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-	for (n = 2; n <= 10; n++)
-	{
-		_putchar(95);
-	}
-		_putchar('\n');
-	}
+int i;
+
+if (n <= 0)
+{
+_putchar('\n');
 }
+else
+{
+for (i = 2; i <= 10; i++)
+{
+_putchar(95);
+}
+_putchar('\n');
+}
+}
+
