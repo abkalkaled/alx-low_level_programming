@@ -12,15 +12,15 @@ int is_prime(int n, int div)
 		return (0);
 	if (n == div)
 		return (1);
-	return (is_prime(n, div + 1));
+	return (is_prime(n + 1, div));
 }
 int is_prime_number(int n)
 {
-	int div = 5;
+	int div = 3;
 
 	if (n % 2 == 0 || n < 0)
 		return (0);
-	else if (n == 2)
+	if (n == 2)
 		return (1);
 	return (is_prime(n, div));
 }
