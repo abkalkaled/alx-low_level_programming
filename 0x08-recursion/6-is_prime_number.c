@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * is_prime_number - function to return prime number
- * @is_prime
+ * @is_prime - function to return div
  * @n: prime number
  * @div: the divisor
  * Return: 0 or 1
