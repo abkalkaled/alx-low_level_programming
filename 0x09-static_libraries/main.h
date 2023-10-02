@@ -1,5 +1,8 @@
 #ifndef MAIN_HEADER_FILE
 #define MAIN_HEADER_FILE
+#include <stdio.h>
+#include <string.h>
+#define NULL
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
