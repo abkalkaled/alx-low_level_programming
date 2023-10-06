@@ -2,7 +2,8 @@
 #define MAIN_HEADER_FILE
 #include <stdio.h>
 #include <string.h>
-#define NULL
+#include <stdlib.h>
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);

@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL 0
 /**
 * _strstr - function to locate and return pointer to first occurence of substring
 * @haystack: string to search

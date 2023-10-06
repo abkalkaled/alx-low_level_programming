@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL 0
 /**
 * _strpbrk - loaction fo first occurence starts
 * @s: string to search
@@ -9,19 +8,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int a = 0, b;
+	int i;
+	int j;
 
-	while (s[a] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (b = 0; accept[b] != '\0'; b++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[a] == accept[b])
+			if (s[i] == accept[j])
 			{
-				s = &s[a];
-				return (s);
+				return (s + i);
 			}
 		}
-		a++;
 	}
-	return (NULL);
+	return (0);
 }
