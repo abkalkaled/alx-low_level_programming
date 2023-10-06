@@ -6,13 +6,13 @@
  *@argv: argument vector
  *Return: 0;
  */
-int main(int argc, char *argv[]__attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	int i = argc - 1, j = i - 1, mul;
 
 		if (i == 2)
 		{
-			mul = i * j;
+			mul = atoi(argv[i]) * atoi(argv[j]);
 			printf("%d\n", mul);
 		}
 		else 
