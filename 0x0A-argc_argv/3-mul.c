@@ -8,9 +8,9 @@
  */
 int main(int argc, char *argv[]__attribute__((unused)))
 {
-	int i, j, mul;
+	int i = argc - 1, j = i - 1, mul;
 
-		if (argc == 2)
+		if (i == 2)
 		{
 			mul = i * j;
 			printf("%d\n", mul);
