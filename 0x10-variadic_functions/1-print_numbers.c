@@ -4,8 +4,8 @@
 /**
  * print_numbers - print numbers followed by new line
  * @n: number of integers passed
- * @seperator:
- * Return: 
+ * @separator: between numbers
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
