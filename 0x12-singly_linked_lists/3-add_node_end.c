@@ -15,22 +15,31 @@ int _strlen(const char *s)
 	}
 	return (i);
 }
+
 /**
- * add_node - adds a new node at the beginning of a list_t list
+ * add_node_end - adds a new node at the end of a list_t list
  * @head: pointer to the list_t list
  * @str: string that is going to be saved in the list_t list
  * Return: the address of the new element, or NULL if it failed
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newNode;
+	list_t *end, *temp;
 
-	newNode = malloc(sizeof(list_t));
-	if (newNode == NULL)
+	temp = *head;
+	end = malloc(sizeof(list_t));
+	if (end == NULL)
 		return (NULL);
-	newNode->str = strdup(str);
-	newNode->len = _strlen(str);
-	newNode->next = *head;
-	*head = newNode;
-	return (*head);
+	end->str = strdup(str);
+	end->len = _strlen(str);
+	end->next = NULL;
+	if (*head == NULL)
+	{
+		*head = end;
+		return (end);
+	}
+	while (temp->next != NULL)
+		temp = temp->next;
+	temp->next = end;
+	return (temp);
 }
