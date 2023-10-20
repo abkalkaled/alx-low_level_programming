@@ -1,16 +1,17 @@
-section .data
-    format db "Hello, Holberton",10,0  ; The format string for printf
+section .rodata
+fmt: db 'Hello, %s', 10, 0
+msg:   db 'Holberton', 0
 
 section .text
-    global main
-    extern printf
-
+ global main
+extern printf
 main:
-    ; Push the address of the format string onto the stack
-    lea rdi, [format]
-    call printf
-
-    ; Exit the program
-    mov rax, 60       ; syscall number for exit (60)
-    xor rdi, rdi      ; status = 0
-    syscall
+; printf(fmt, msg)
+mov rdi, fmt
+mov rsi, msg
+; no XMM registers
+mov rax, 0
+call printf
+; return 0
+ mov rax, 0
+ret
