@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * add_noteint_end - add new note at the end
+ * add_nodeint_end - add new note at the end
  * @head: pointer to the last address
+ * @n: new node data
  * Return: address or NULL
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
