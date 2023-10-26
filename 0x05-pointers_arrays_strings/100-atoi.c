@@ -6,27 +6,23 @@
  */
 int _atoi(char *s)
 {
-	short boolean;
-	int i, sign, rslt;
-	
-	i = sign = rslt = boolean = 0;
-	sign = -1;
+	int sign = 1;
+	int rslt = 0;
+	int i = 0;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == '-')
 			sign *= -1;
 
-		if (s[i] >= '0' && s[i] <= '9')
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
-			rslt *= 10;
-			rslt -= (s[i] - '0');
-			boolean = 1;
+			rslt = rslt * 10 + (s[i] - '0');
 		}
-		else if (boolean == 1)
+		else if (rslt > 0)
 			break;
 		i++;
 	}
-	rslt *= sign;
-	return (rslt);
+
+	return (rslt * sign);
 }

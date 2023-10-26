@@ -7,7 +7,7 @@
 * Return: haystack pointer or NULL
 */
 
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack,char *needle)
 {
 	int a = 0, b, x;
 
