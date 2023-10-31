@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	char buffer[BUFFER_SIZE];
 	ssize_t bytes_read, bytes_written;
 	int fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC,
-S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
+S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
 
 		if (argc != 3)
 			error_exit(97, "Usage: cp file_from file_to");
