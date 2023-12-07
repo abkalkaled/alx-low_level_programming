@@ -1,10 +1,14 @@
 #include "lists.h"
-
+/**
+ * dlistint_len - function to print length of element
+ * @h: head of doubly list pointer
+ * Return: Returns node count
+ */
 size_t dlistint_len(const dlistint_t *h)
 {
 	const dlistint_t *current = h;
 	size_t node_count = 0;
-	
+
 	while (current != NULL)
 	{
 		current = current->next;
