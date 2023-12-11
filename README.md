@@ -1,1 +1,1 @@
-Bit mainuplation using bitewise operators
+0x18. C - Dynamic libraries
